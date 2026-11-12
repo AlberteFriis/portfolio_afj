@@ -1,7 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    background-color: var(--backgroundColor);
+}
+
+
+
+:root {
+    --backgroundColor: #604F23;
+    --secondaryColor: #F1ECE5;
+    --buttonColor: #b0431b;
+    --secondaryButtonColor: #746F88;
+    --thirdButtonColor: #9E6382;
+    --fourthButtonColor: #A0ACBF;
+    --smGap: 0.5rem;
+    --mdGap: 1rem;
+    --lgGap: 2rem;
+    --xlGap: 3rem;
+    --textSize: 18px;
+    --headingSize: 35px;
+    --textColor: #ffffff;
+    --fontHeader: "Arvo", sans-serif;
+    --fontBody: "Open Sans", sans-serif;
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --side: 4rem;
+
+}
+
+
+/* navigtaion content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-right: var(--side);
+    padding-left: var(--lgGap);
+
+
+    img {
+        max-width: 200px;
+    }
+
+    p {
+        font-size: var(--textSize);
+        color: var(--textColor);
+        margin-top: var(--xlGap);
+        font-family: var(--fontHeader);
+    }
+
+
+    /* til de andre sider hvor p bliver skiftet ud nav content */
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--xlGap);
+        list-style: none;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            border: none;
+            color: #ffffff;
+        }
+
+        /* kilde: https://www.w3schools.com/cssref/func_polygon.php, gør det muligt for mig at lave polygon formen ved skiltene.  */
+        a.active {
+            font-weight: bold;
+            clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+            padding: .5rem 2rem;
+            background-color: var(--buttonColor);
+        }
+    }
+}
+
+/* css til index.html */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--xlGap);
+    gap: 4rem;
+    width: 100%;
+    padding-inline: var(--side);
+
+    .intro {
+        flex: 1;
+
+        p {
+            color: var(--textColor);
+            line-height: 150%;
+            font-family: var(--fontBody);
+            max-width: 50ch;
+            font-weight: 300;
+
+
+            span {
+                font-weight: bolder;
+            }
+
+        }
+
+        h1 {
+            font-size: var(--headingSize);
+            color: var(--textColor);
+            font-family: var(--fontHeader);
+
+            span {
+                color: var(--buttonColor);
+            }
+        }
+    }
+
+    .profile-image {
+        flex: 1;
+        position: relative;
+
+    }
+
+    .profile-image img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        display: block;
+    }
+
+    .metadata-container {
+        display: flex;
+        align-items: center;
+        gap: var(--lgGap);
+        padding-top: var(--mdGap);
+    }
+
+    .location,
+    .workSituation {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+    }
+
+
+}
+
+/* css til nav vejskiltene i index.html */
+/* position i forhold til billedet */
+.vejviser {
+    position: absolute;
+    inset: 0;
+
+    /* Kilde: https://www.w3schools.com/cssref/sel_before.php#gsc.tab=0 css-psuedo element ::before, indsætter tomt indhold med content: "", så jeg kan lave min farvet vejstolpe, & finder dens parent-element*/
+
+    &::before {
+        /* stolpen */
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 20%;
+        bottom: 0;
+        width: 44px;
+        background: #4a1f2b;
+    }
+}
+
+.skilt {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: .7rem 1rem;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        transform: rotate(4deg) scale(1.04);
+        filter: brightness(1.1);
+    }
+
+}
+
+/* Anvendelse af polygon form igen, se kilde længere oppe. */
+
+.skilt-hoejre {
+    clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+}
+
+.skilt-venstre {
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+}
+
+/* De enkelte skilte design og placering */
+.skilt-her {
+    top: 20%;
+    left: -10%;
+    width: auto;
+    padding: 1rem 2rem;
+    background: var(--buttonColor);
+    transform: none;
+
+    &:hover {
+        transform: none;
+        filter: none;
+    }
+
+}
+
+.skilt-projekter {
+    top: 40%;
+    left: -20%;
+    background: #6f6f8f;
+
+
+}
+
+.skilt-kontakt {
+    top: 60%;
+    left: -20%;
+    background: #9b5f7d;
+
+}
+
+.skilt-ommig {
+    top: 80%;
+    left: -20%;
+    background: #a0a8bd;
+
+}
+
+/* media til index.html */
+@media (max-width: 800px) {
+
+    .intro-container {
+        flex-direction: column;
+
+
+        .profile-image img {
+            display: none;
+        }
+
+        .profile-image {
+            flex: none;
+            width: 100%;
+            height: 450px;
+        }
+
+        .vejviser {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .vejviser::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            right: auto;
+            top: 0;
+            bottom: 0;
+            width: 30px;
+            height: auto;
+        }
+
+
+        .skilt {
+            left: 50%;
+            width: 50%;
+
+        }
+
+        .skilt-her {
+            left: 37%;
+            width: auto;
+            top: 0%;
+        }
+
+        .skilt-projekter {
+            left: 30%;
+            top: 25%;
+        }
+
+        .skilt-kontakt {
+            left: 30%;
+            top: 50%;
+        }
+
+        .skilt-ommig {
+            left: 30%;
+            top: 75%;
+
+        }
+
+
+
+    }
+}
+
+
+
+
+/* start css om-mig */
+
+.mig-intro-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--xlGap);
+    gap: 4rem;
+    width: 100%;
+    padding-inline: var(--side);
+
+    .intro {
+
+        p {
+            color: var(--textColor);
+            max-width: 50ch;
+            line-height: 150%;
+            font-family: var(--fontBody);
+            font-weight: 300;
+
+        }
+
+        h1 {
+            font-size: var(--headingSize);
+            color: var(--textColor);
+            font-family: var(--fontHeader);
+            margin: none;
+
+            span {
+                color: var(--buttonColor);
+            }
+        }
+
+        button {
+
+            background-color: var(--buttonColor);
+            box-shadow: var(--shadow);
+            color: var(--textColor);
+            border: none;
+            padding: .8rem .5rem;
+            border-radius: 6px;
+            margin-top: var(--mdGap);
+            cursor: pointer;
+            margin-top: 2.5rem;
+
+        }
+
+        button:hover {
+            background-color: #4a1f2b;
+        }
+    }
+
+    .slideshow {
+        position: relative;
+        width: 750px;
+    }
+
+    .slideshow img {
+        width: 100%;
+        display: block;
+        max-height: 600px;
+        object-fit: cover;
+    }
+
+    .slideshow button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 12px;
+        cursor: pointer;
+    }
+
+    .slideshow .prev {
+        left: 10px;
+    }
+
+    .slideshow .next {
+        right: 10px;
+    }
+}
+
+
+
+.komp-container {
+    padding-top: 5rem;
+    padding-bottom: var(--xlGap);
+
+    h2 {
+        font-size: 20px;
+        color: var(--textColor);
+        font-family: var(--fontHeader);
+        padding-inline: var(--side);
+        padding-bottom: var(--mdGap);
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-inline: var(--side);
+        gap: var(--mdGap);
+        width: 100%;
+
+        article {
+            border: 2px solid var(--fourthButtonColor);
+            padding: 1rem;
+            border-radius: 8px;
+
+            h3 {
+                color: var(--textColor);
+                font-family: var(--fontHeader);
+                font-size: 16px;
+                font-weight: 300;
+                display: flex;
+                gap: var(--smGap);
+            }
+
+            p {
+                color: var(--textColor);
+                line-height: 150%;
+                font-family: var(--fontBody);
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .mig-intro-container {
+        display: flex;
+        flex-direction: column;
+
+        .slideshow {
+            width: auto;
+        }
+    }
+
+    .komp-container {
+        padding-top: var(--lgGap);
+
+        .box-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+/* mine projekter css start */
+
+.project-container {
+
+    .project-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            padding-inline: var(--side);
+            color: white;
+            font-size: var(--headingSize);
+            font-family: var(--fontHeader);
+
+            span {
+                color: var(--buttonColor);
+            }
+        }
+
+        .card-info {
+            padding-inline: var(--side);
+            display: flex;
+            gap: var(--mdGap);
+
+
+            p {
+                color: white;
+            }
+
+        }
+    }
+
+
+    /* kortene i forhold til kortet bagved */
+    .card {
+        position: relative;
+        padding-inline: var(--side);
+        padding-block: 1rem 3rem;
+
+        .contactProject {
+            position: absolute;
+            text-decoration: none;
+            background-color: var(--buttonColor);
+            padding: .5rem 1rem;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            left: 83%;
+            top: 17.5%;
+        }
+
+        .contactProject:hover {
+            background-color: #4a1f2b;
+
+        }
+    }
+
+    .card img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .to-do,
+    .mallemukken,
+    .kitchen {
+        position: absolute;
+        width: 22%;
+        max-width: 300px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+
+        article {
+            padding: 15px;
+        }
+
+        p {
+            font-size: 12px;
+            font-family: var(--fontBody);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-family: var(--fontHeader);
+        }
+
+        .info-card {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: var(--smGap);
+        }
+
+        button {
+            border: none;
+            background-color: var(--buttonColor);
+            padding: .5rem 1rem;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4a1f2b;
+        }
+    }
+
+    /* Placeringen på kortet */
+    .to-do {
+        left: 10%;
+        top: 33%;
+    }
+
+    .mallemukken {
+        left: 55%;
+        top: 50%;
+    }
+
+    .kitchen {
+        left: 50%;
+        top: 10%;
+    }
+}
+
+/* media queries i forhold til alle projekt siden */
+@media (max-width: 800px) {
+    .project-container {
+
+        .project-info {
+
+            .card-info {
+
+                display: none;
+
+            }
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            img {
+                display: none;
+            }
+
+            .contactProject {
+                display: none;
+            }
+
+        }
+
+        .to-do,
+        .mallemukken,
+        .kitchen {
+            position: static;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+
+/* Css for case.html */
+.content {
+    background-color: #f1ece5;
+    margin-inline: var(--side);
+    height: 600px;
+    padding-inline: var(--side);
+    border-radius: 10px;
+    padding-top: var(--lgGap);
+    margin-bottom: 4rem;
+
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+
+
+
+        .information {
+            overflow-y: auto;
+            max-height: 400px;
+
+
+
+            h2 {
+                font-family: var(--fontHeader);
+                font-size: 30px;
+            }
+
+            p {
+                max-width: 50ch;
+                overflow-wrap: break-word;
+                line-height: 150%;
+                font-family: var(--fontBody);
+                white-space: pre-line;
+
+
+
+            }
+        }
+
+        .imgProjekt {
+
+            img {
+                padding-top: 2rem;
+                width: 100%;
+                max-height: 450px;
+                height: auto;
+                display: block;
+                cursor: zoom-in;
+            }
+        }
+
+    }
+
+
+
+
+
+    .btnContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: var(--lgGap);
+
+
+
+
+        .back,
+        .next {
+            border: none;
+            background-color: var(--buttonColor);
+            color: white;
+            padding: .7rem 2rem;
+            cursor: pointer;
+            border-radius: 6px;
+            box-shadow: var(--shadow);
+            font-weight: bold;
+
+        }
+    }
+
+    .btnInfo {
+        display: flex;
+        gap: 4rem;
+
+        a {
+            background-color: var(--buttonColor);
+            color: white;
+            padding: .7rem 2rem;
+            cursor: pointer;
+            border-radius: 6px;
+            box-shadow: var(--shadow);
+            font-weight: bold;
+            text-decoration: none;
+            font-family: var(--fontBody);
+
+        }
+
+        a:hover {
+            background-color: #4a1f2b;
+        }
+    }
+}
+
+
+/* TOPNAVIGATION */
+.topNav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 0 15px;
+
+}
+
+/* Stiplet linje mellem prikkerne */
+.topNav::before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 18px;
+    border-top: 3px dashed #4a1f2b;
+    z-index: 0;
+}
+
+/* Navigationsknapper */
+.topNav .stop {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Prikker */
+.topNav .prik {
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: var(--buttonColor);
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* Valgt prik */
+.topNav .stop.valgt .prik {
+    background: #F08A4B;
+    outline: 3px solid rgba(240, 138, 75, 0.3);
+}
+
+/* Valgt tekst */
+.topNav .stop.valgt {
+    color: #F08A4B;
+    font-weight: 700;
+}
+
+/* Tastaturfokus */
+.topNav .stop:focus-visible {
+    outline: 2px solid #F08A4B;
+    outline-offset: 5px;
+}
+
+.underNav {
+    padding-inline: var(--side);
+    display: flex;
+    flex-direction: row;
+    padding-bottom: var(--lgGap);
+    gap: var(--mdGap);
+
+    button {
+        background-color: var(--backgroundColor);
+        border: 1px solid rgb(49, 30, 18);
+        padding: 1rem 2rem;
+        color: white;
+        justify-content: flex-end;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--buttonColor);
+    }
+
+
+}
+
+@media(max-width:800px) {
+    .content {
+        height: 1000px;
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .underNav {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

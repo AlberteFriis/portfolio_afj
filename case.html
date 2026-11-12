@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekter, Alberte multimediedesigner.</title>
+    <meta name="description"
+        content="Projekter med forskellige gennemgang fra brugerundersøgeler, indhold design til kodning med Vue, JavaScript.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/projekt.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- manual download til link plug in fra liteligthbox -->
+    <link rel="stylesheet" href="https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- trejdepartskode https://litelightbox.com/ forstørre billederne i projekterne, jeg henter programmet liteligthbox, som skal hente funktionen init -->
+    <script type="module">
+        import { init } from 'https://unpkg.com/litelight-js@1.2.0/dist/lite-light.min.js';
+
+        // forklare hvilke billedere den skal hente, hvilket er dem som har attributen [data-lightbox] på img. 
+        init({ imageSelector: 'img[data-lightbox]' });
+
+    </script>
+
+    <header>
+        <div class="header-content">
+            <a href="./index.html">
+                <img src="./assets/img/logo.png" alt="Logo" />
+            </a>
+            <nav class="nav-content">
+                <ul>
+                    <li><a href="./om-mig.html">Om mig</a> </li>
+                    <li><a href="./projekter.html">Mine projekter</a></li>
+                    <li><a href="mailto:friisjensen2206@gmail.com">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Jeg har valgt at gøre brug af javascript for få indholdet dynamisk ind og kunne navigere rundt i de forskellige navigationer. Så har kun skrevet de html syntaks til hvor indholdet skal ind med innerhtml.  -->
+    <main>
+
+        <nav class="topNav"></nav>
+        <nav class="underNav"></nav>
+        <div class="content"></div>
+    </main>
+
+
+
+</body>
