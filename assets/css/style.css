@@ -13,7 +13,7 @@ body {
 
 
 :root {
-    --backgroundColor: #604F23;
+    --backgroundColor: #3f3211;
     --secondaryColor: #F1ECE5;
     --buttonColor: #b0431b;
     --secondaryButtonColor: #746F88;
@@ -34,13 +34,16 @@ body {
 }
 
 
+
+
+
 /* navigtaion content */
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-right: var(--side);
     padding-left: var(--lgGap);
+    align-items: center;
 
 
     img {
@@ -103,7 +106,7 @@ body {
 
 
             span {
-                font-weight: bolder;
+                font-weight: 900;
             }
 
         }
@@ -116,28 +119,32 @@ body {
             span {
                 color: var(--buttonColor);
             }
+
         }
-    }
-
-    .profile-image {
-        flex: 1;
-        position: relative;
 
     }
 
-    .profile-image img {
-        width: 100%;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        display: block;
-    }
 
-    .metadata-container {
-        display: flex;
-        align-items: center;
-        gap: var(--lgGap);
-        padding-top: var(--mdGap);
-    }
+}
+
+.profile-image {
+    flex: 1;
+    position: relative;
+
+}
+
+.profile-image img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+}
+
+.metadata-container {
+    display: flex;
+    align-items: center;
+    gap: var(--lgGap);
+    padding-top: var(--mdGap);
 
     .location,
     .workSituation {
@@ -146,9 +153,12 @@ body {
         gap: .5rem;
 
     }
-
-
 }
+
+
+
+
+
 
 /* css til nav vejskiltene i index.html */
 /* position i forhold til billedet */
@@ -222,89 +232,19 @@ body {
 }
 
 .skilt-kontakt {
-    top: 60%;
+    top: 80%;
     left: -20%;
     background: #9b5f7d;
 
 }
 
 .skilt-ommig {
-    top: 80%;
+    top: 60%;
     left: -20%;
     background: #a0a8bd;
 
 }
 
-/* media til index.html */
-@media (max-width: 800px) {
-
-    .intro-container {
-        flex-direction: column;
-
-
-        .profile-image img {
-            display: none;
-        }
-
-        .profile-image {
-            flex: none;
-            width: 100%;
-            height: 450px;
-        }
-
-        .vejviser {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-
-        .vejviser::before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 50%;
-            right: auto;
-            top: 0;
-            bottom: 0;
-            width: 30px;
-            height: auto;
-        }
-
-
-        .skilt {
-            left: 50%;
-            width: 50%;
-
-        }
-
-        .skilt-her {
-            left: 37%;
-            width: auto;
-            top: 0%;
-        }
-
-        .skilt-projekter {
-            left: 30%;
-            top: 25%;
-        }
-
-        .skilt-kontakt {
-            left: 30%;
-            top: 50%;
-        }
-
-        .skilt-ommig {
-            left: 30%;
-            top: 75%;
-
-        }
-
-
-
-    }
-}
 
 
 
@@ -340,6 +280,7 @@ body {
             span {
                 color: var(--buttonColor);
             }
+
         }
 
         a {
@@ -351,6 +292,7 @@ body {
             cursor: pointer;
             text-decoration: none;
             font-family: var(--fontBody);
+
 
         }
 
@@ -439,25 +381,6 @@ body {
     }
 }
 
-@media(max-width: 800px) {
-    .mig-intro-container {
-        display: flex;
-        flex-direction: column;
-
-        .slideshow {
-            width: auto;
-        }
-    }
-
-    .komp-container {
-        padding-top: var(--lgGap);
-
-        .box-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
 
 /* mine projekter css start */
 
@@ -559,11 +482,25 @@ body {
             padding-bottom: var(--smGap);
         }
 
+        .readProject {
+            background-color: var(--buttonColor);
+            text-align: center;
+            padding: .5rem 1rem;
+            color: var(--textColor);
+            font-weight: bold;
+        }
+
+        .readProject:hover {
+            background-color: #4a1f2b;
+
+        }
+
+
     }
 
     /* Placeringen på kortet */
     .to-do {
-        left: 10%;
+        left: 8%;
         top: 33%;
     }
 
@@ -578,50 +515,13 @@ body {
     }
 }
 
-/* media queries i forhold til alle projekt siden */
-@media (max-width: 800px) {
-    .project-container {
-
-        .project-info {
-
-            .card-info {
-
-                display: none;
-
-            }
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-
-            img {
-                display: none;
-            }
-
-            .contactProject {
-                display: none;
-            }
-
-        }
-
-        .to-do,
-        .mallemukken,
-        .kitchen {
-            position: static;
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-}
 
 
 /* Css for case.html */
 .content {
     background-color: #f1ece5;
     margin-inline: var(--side);
-    height: 600px;
+    height: 700px;
     padding-inline: var(--side);
     border-radius: 10px;
     padding-top: var(--lgGap);
@@ -629,12 +529,9 @@ body {
 
 
     section {
-        display: flex;
-        justify-content: space-between;
-        gap: 4rem;
-        width: 100%;
-        box-sizing: border-box;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
 
 
 
@@ -666,17 +563,15 @@ body {
             img {
                 padding-top: 2rem;
                 width: 100%;
-                max-height: 450px;
+                max-height: 500px;
                 height: auto;
                 display: block;
                 cursor: zoom-in;
+                object-fit: cover;
             }
         }
 
     }
-
-
-
 
 
     .btnContainer {
@@ -701,9 +596,9 @@ body {
         }
     }
 
-    .btnInfo {
+    div {
         display: flex;
-        gap: 4rem;
+        gap: var(--lgGap);
 
         a {
             background-color: var(--buttonColor);
@@ -788,11 +683,7 @@ body {
     font-weight: 700;
 }
 
-/* Tastaturfokus */
-.topNav .stop:focus-visible {
-    outline: 2px solid #F08A4B;
-    outline-offset: 5px;
-}
+
 
 .underNav {
     padding-inline: var(--side);
@@ -816,6 +707,139 @@ body {
     }
 
 
+}
+
+
+
+
+/* media til index.html */
+@media (max-width: 800px) {
+
+    .intro-container {
+        flex-direction: column;
+
+
+        .profile-image img {
+            display: none;
+        }
+
+        .profile-image {
+            flex: none;
+            width: 100%;
+            height: 450px;
+        }
+
+        .vejviser {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .vejviser::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            right: auto;
+            top: 0;
+            bottom: 0;
+            width: 30px;
+            height: auto;
+        }
+
+
+        .skilt {
+            left: 50%;
+            width: 50%;
+
+        }
+
+        .skilt-her {
+            left: 37%;
+            width: auto;
+            top: 0%;
+        }
+
+        .skilt-projekter {
+            left: 30%;
+            top: 25%;
+        }
+
+        .skilt-kontakt {
+            left: 30%;
+            top: 75%;
+        }
+
+        .skilt-ommig {
+
+            left: 30%;
+            top: 50%;
+
+        }
+
+
+
+    }
+}
+
+/* media queries i forhold til alle projekt siden */
+@media (max-width: 800px) {
+    .project-container {
+
+        .project-info {
+
+            .card-info {
+
+                display: none;
+
+            }
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            img {
+                display: none;
+            }
+
+            .contactProject {
+                display: none;
+            }
+
+        }
+
+        .to-do,
+        .mallemukken,
+        .kitchen {
+            position: static;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .mig-intro-container {
+        display: flex;
+        flex-direction: column;
+
+        .slideshow {
+            width: auto;
+        }
+    }
+
+    .komp-container {
+        padding-top: var(--lgGap);
+
+        .box-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 @media(max-width:800px) {

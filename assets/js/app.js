@@ -1,3 +1,5 @@
+
+
 // Laver en variabel med et array for mit slideshow med alle mine billeder i om-mig
 const billeder = [
     "./assets/img/fhike.webp",

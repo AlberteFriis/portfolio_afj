@@ -5,10 +5,11 @@ const projekter = [
         topNav: [
             {
                 navn: 'Mallemukken - restaurant',
-                tekst: `Jeg har fælles med andre multimediedesignerstuderende arbejdet med at udvikle et re-design for en restaurant med fokus på samvær og brugervenlighed.
+                tekst: `Jeg har fælles med andre multimediedesignerstuderende arbejdet med, at udvikle et re-design for en restaurant med fokus på samvær og brugervenlighed.
 
-                Formålet har været at fokusere på hvordan vi kan skabe overskuelighed gennem navigationen og understøtte brugernes mulige behov, med anvendelse af relevante teorier og metoder. `,
-                img: './assets/img/mallemukken.webp',
+                Formålet har været at fokusere på, hvordan vi kan skabe overskuelighed gennem navigation og understøtte brugernes mulige behov, med anvendelse af relevante teorier og metoder. `,
+
+                img: './assets/img/oMallemukken.webp',
                 github: 'https://github.com/MortenSmith/MalleMukken2SemEksamen',
                 website: ''
             },
@@ -17,55 +18,53 @@ const projekter = [
                 navn: 'Analyse',
                 under: [
                     {
-                        navn: 'Desk research', tekst: `For at få en bedre forståelse af restaurantens potientielle kunder har vi anvendt desk research. I forbindelse med desk research har vi anvendt GAI som et understøttende værktøj til at identificere relevante temaer, teori og kilder om gæsters behov og motiver i relation til restaurantbesøg.
+                        navn: 'Desk research', tekst: `For at få en bedre forståelse af restaurantens potientielle kunder har vi anvendt desk research. Vi har i forbindelse med desk research anvendt GAI som et understøttende værktøj, til at identificere relevante temaer, teorier og kilder om gæsters behov og motiver i relation til restaurantbesøg.
                         
                         På baggrund af desk researchen kan det konkluderes, at restaurantbesøg i høj grad er drevet af sociale og praktiske faktorer. Socialt samvær spiller en central rolle, da mange foretrækker at spise sammen med familie og venner. Især personer, der bor sammen med andre, herunder børnefamilier, som vægter selskabet højere end maden. Et restaurantbesøg skaber en vigtig ramme for fællesskabet. `,
                         img: './assets/img/mDeskResearch.webp'
                     },
                     {
-                        navn: 'Segmentering', tekst: `Den objektive side kan målgruppen opdeles efter geografiske og demografiske forhold. Mallemukkens gæster består både af lokale, turister, samt forskellige aldersgrupper, herunder unge, voksne og børnefamilier.
+                        navn: 'Segmentering', tekst: `Baseret på desk research laves en segmentering. Der kan konkluderes i segmenteringen, at på den objektive side kan målgruppen opdeles efter geografiske og demografiske forhold. Mallemukkens gæster består både af lokale, turister, samt forskellige aldersgrupper, herunder unge, voksne og børnefamilier.
                         
-                        Den subjektive side viser analysen, at restaurantgæster i højere grad er motiveret af det sociale samvær, oplevelsen og stemningen. Faktorer som madens kvalitet, pris og beliggenhed spiller en central rolle i valget af restaurant.
+                        Den subjektive side viser researchen, at restaurantgæster i højere grad er motiveret af det sociale samvær, oplevelsen og stemningen. Faktorer som madens kvalitet, pris og beliggenhed spiller en central rolle i valget af en restaurant.
                         
-                        Det sociale samvær er central i ude spisning specielt hos børnefamilier, de prioriterer fællesskabet fremfor maden. Samlet set viser segmenteringen, at målgruppen kan have forskellige karakteristika, men fælles for dem er oplevelsen og nyde stemningen. Dette danner et grundlag for arbejdet i de designmæssige valg i redesign-projektet.`, img: './assets/img/mSegmentering.webp'
+                        Det sociale samvær er central når mennsker spiser ude specielt hos børnefamilier, de prioriterer fællesskabet fremfor maden. Samlet set viser segmenteringen, at målgruppen kan have forskellige karakteristika, men fælles for dem er oplevelsen og nyde stemningen. Dette danner et grundlag for arbejdet i de designmæssige valg.`, img: './assets/img/mSegmentering.webp'
                     },
                     {
-                        navn: 'Interviewguide', tekst: `Vores formål var at indsamle informationer om, hvad der motiverer folk til at tage på restaurant, samt hvilke behov og hvad de kigger efter, når de skal vælge restauranten.
+                        navn: 'Interviewguide', tekst: `Efter segmentering var vores formål, at indsamle informationer om, hvad der motiverer folk til at tage på restaurant, samt hvilke behov og hvad de kigger efter, når de skal vælge en restaurant.
                         
                         En hypotese, som: folk vælger restauranter ud fra flere kriterier, som pris, omgivelser, fællesskabet, maden og stemningen, samt forventningerne til oplevelsen er central for folk. 
                     
-                        Fokus på undersøgelsesspørgsmål, som er, ”hvilket behov og motivationer ligger bag, at folk vælger at tage på restaurant? Og ” hvilke faktorer har størst betydning for folks valg af restaurant, hvordan prioriteres de disse faktorer?”.`, img: './assets/img/mInterviewguide.webp'
+                        Vi fokusere på undersøgelsesspørgsmål som, ”hvilket behov og motivationer ligger bag, at folk vælger at tage på restaurant? Og ” hvilke faktorer har størst betydning for folks valg af restaurant, hvordan prioriteres de disse faktorer?”. Det undersøges gennem flere inteviews baseret på en bred aldersgruppe og analyseres ved hjælp af tematisk analyse.`, img: './assets/img/mInterviewguide.webp'
                     },
                     {
                         navn: 'Tematiskanalyse', tekst: `
-                        Gennem den tematisk analyse identificere vi fællestemaer og fællesmønstre på resultaterne fra interviewet. Vi har prioriteret følgende temaer, socialt samvær, forventninger, oplevelse og stemning, og frustrationer.
+                        Vi har identificere nogle fællestemaer og fællesmønstre på resultaterne fra interviewet. De følgende temaer er socialt samvær, forventninger, oplevelse og stemning, og frustrationer.
                         
-                        I den teatiskeanalyse er det gentagende tema socialt aspekt blevet beskrevet i et interview, med ord som hygge og stemning sammen med andre.
+                        I den tematiskeanalyse er det gentagende tema socialt samvær blevet beskrevet i et interview, med ord som hygge og stemning sammen med andre.
                         
-                        Efterfulgt af temaet forventninger at informationerne online også passer med det i virkeligheden, menu, billede og stemning matcher, det man oplever, når man besøger hjemmesiden.
+                        Efterfulgt af temaet forventninger, er beskrebt med, at informationerne online skal passe med information virkeligheden, f.eks. menu, billeder og stemning matcher, det man oplever, når man besøger hjemmesiden.
                         
-                        Temaet oplevelse og stemning er et gentagende tema blandt interviewene. Flere gangen bliver der sagt stemning, hygge og oplevelsen, som skaber lysten til at tage på en restaurant. Temaet frustration/rodet hjemmeside var nævnt med f.eks. dårlige anmeldelser, manglende information online, hjemmesider uden menukort, ingen åbningstider eller gammelt design.
+                        Temaet oplevelse og stemning er et gentagende tema blandt interviewene. Flere gangen er ordene stemning, hygge og oplevelse nævnt. Det skaber lysten til at tage på en restaurant.
                         
-                        På baggrund af interviewundersøgelsen er der opnået indsigt i brugernes behov, motivationer og adfærd i forbindelse med restaurantbesøg. Hvordan kan vi frembringe temaerne i vores designbeslutninger? Den tematiske analyse har identificeret centrale temaer som socialt samvær, oplevelse og stemning, forventninger samt frustrationer, hvilket tydeliggør, hvad der er vigtigt for brugerne.`
+                        Temaet frustration/rodet hjemmeside var nævnt med f.eks. dårlige anmeldelser, manglende information online, hjemmesider uden menukort, ingen åbningstider eller gammelt design.
+                        
+                        På baggrund af interviewundersøgelsen er der opnået indsigt i brugernes behov, motivationer og adfærd i forbindelse med restaurantbesøg. Det giver os tankerne, hvordan kan vi frembringe temaerne i vores designbeslutninger?.`
                     },
                     {
-                        navn: 'Empathy maps', tekst: `Pains og gains ud fra vores empathy maps, f.eks. at brugerne generelt vægter en nem adgang til information højt, især i forhold til menukort, bookingmuligheder og arrangementer. Flere beskriver et behov for at kunne danne sig et hurtigt overblik over restaurantens udvalg, og andre praktiske informationer.
-                    
-                    Overskuelig navigation og tydelig strukturering af indholdet har stor betydning for brugeroplevelsen og brugerens opfattelse af restauranten, samt restaurantens troværdig. Derudover viser empathy mapsene, at brugerne ønsker en hurtig og intuitiv adgang til centrale funktioner, såsom online booking.
-                    
-                    Ud fra empathy maps analysen, så fremhæves det at flere interviewpersoner prioriterer stemningen og hyggen ved at tage på restaurant. De forbandt den gode oplevelse med atmosfæren og udseendet for restauranten, som samlet skulle give den gode oplevelse, det tydeliggør brugernes behov for at restauranten ikke kun skal have adgang til hurtige centrale funktioner som menuen, men at restauranten kan kommunikere deres egen stemning og identitet visuelt.
+                        navn: 'Empathy maps', tekst: `Vi har udover tematisk analyse anvendt empathy maps for at komme frem til Pains og gains fra interviewpersonerne, f.eks. at brugerne generelt vægter en nem adgang til information højt, især i forhold til menukort, bookingmuligheder og arrangementer. Flere beskriver et behov for at kunne danne sig et hurtigt overblik over restaurantens udvalg, og andre praktiske informationer.
+                        
+                        Empathy maps analysen fremhæver, at flere interviewpersoner prioriterer stemningen og hyggen ved at tage på restaurant. De forbandt den gode oplevelse med atmosfæren og udseendet for restauranten, som samlet skulle give den gode oplevelse. Det tydeliggør brugernes behov for at restauranten ikke kun skal have adgang til hurtige centrale funktioner som menuen, men at restauranten skal kunne kommunikere deres egen stemning og identitet visuelt.
                     
                     Det understøtter vigtigheden i vores anvendelse af billeder og æstetik med visuelle elementer. Det skal gerne give brugeren en forventning om oplevelsen på hjemmesiden inden de besøger restauranten. 
                     
-                    På tværs af empathy mapsene vises det, at vi kan skabe bedre forståelse for brugerens perspektiver. Grundet vores indsigter i hvad brugeren føler, tænker, gør og siger. Vi har fundet frem til de centrale pains og gains for brugerne, som at opleve stemningen, intuitive funktioner, nem adgang til information og at kunne skabe overblik over diverse informationer.`, img: './assets/img/mEmpathymaps.webp'
+                    På tværs af empathy mapsene vises det, at vi kan skabe bedre forståelse for brugerens perspektiver. Grundet vores indsigter i hvad brugeren føler, tænker, gør og siger.`, img: './assets/img/mEmpathy.webp'
                     },
 
                     {
-                        navn: 'Card sorting', tekst: `Vi konkludere ud fra vores data, at brugerne placerer indhold under arrangementer, hvilket skyldes det høje resultat i kategorien ”arrangementer”. Dette tyder på, at brugerne forventer at finde events under ”Arrangementer” og ikke under ”Kalender”.
-                    
-                        Den nuværende struktur stemmer derfor ikke overens med brugerens mentale model, dvs. brugeren ikke kan finde det rigtige indhold, i den nuværende struktur, Relateret til Dan Browns princip multiple classification. Vi har observeret, at alle menu-relateret elementer er placeret under ”menu”. 
+                        navn: 'Card sorting', tekst: `Vi anvender card sorting for at kunne forstår den eksiterende navigation. Vores data viser at brugerne placerer indhold under arrangementer, hvilket skyldes det høje resultat i kategorien ”arrangementer”. Dette tyder på, at brugerne forventer at finde events under ”Arrangementer” og ikke under ”Kalender”. Den nuværende struktur stemmer derfor ikke overens med brugerens mentale model, dvs. brugeren ikke kan finde det rigtige indhold, i den nuværende struktur. 
                         
-                        Dette viser, at brugerne har en klar forståelse af, mad og priser bør samles under en kategori, hvilket understøtter en simpel og intuitiv struktur. Samlet set viser card sorting-testen, at der er behov for at revidere den eksisterende informationsarkitektur, så den i højere grad afspejler brugernes mentale modeller. En sådan tilpasning vil kunne forbedre navigationen og gøre det lettere for brugerne at finde relevant information på hjemmesiden.`, img: './assets/img/mCardSorting.webp'
+                        Vi har observeret, at alle menu-relateret elementer er placeret under ”menu”. Dette viser, at brugerne har en klar forståelse af, mad og priser bør samles under en kategori, hvilket understøtter en simpel og intuitiv struktur. Samlet set viser card sorting-testen, at der er behov for at revidere den eksisterende informationsarkitektur, så den i højere grad afspejler brugernes mentale modeller. En sådan tilpasning vil kunne forbedre navigationen og gøre det lettere for brugerne at finde relevant information på hjemmesiden.`, img: './assets/img/mCardSorting.webp'
                     },
 
                 ]
@@ -75,34 +74,34 @@ const projekter = [
                 navn: 'Problemløsning',
                 under: [
                     {
-                        navn: 'Brain dump', tekst: `Det fremvises i vores brain dump nogle af vores ideer i forhold til Mallemukken. F.eks. at brugerne i højere grad kan finde information om allergier eller drikkevarer.Det kom på baggrund af vores interviewpersoner, med deres gentagende svar, at menuen er det første de kigger på, når de skal vælge en restaurant.
+                        navn: 'Brain dump', tekst: `Brain dump viser vores ideer i forhold til Mallemukken. F.eks. at brugerne i højere grad kan finde information om allergier eller drikkevarer. Det kom på baggrund af vores interviewpersoner, med deres gentagende svar, at menuen er det første de kigger på, når de skal vælge en restaurant.
                     
-                        Behovet for at se et menukort inden man vælger en restaurant antyder, at et menukort kan have flere smertepunkter for brugerne. Det skaber muligheden for at tilpasse os, flere af brugeres behov, så de vælger Mallemukken frem for en anden restaurant.
+                        Behovet for at se et menukort inden man vælger en restaurant antyder, at et menukort kan have flere smertepunkter for brugerne. Det skaber muligheden for at tilpasse os flere af brugernes behov, så de vælger Mallemukken frem for en anden restaurant.
 
                         En anden tanke var inddragelsen af Mallemukkens historie. Historien handler ikke kun om ejeren eller datoer, men hvilken oplevelse brugeren får gennem Mallemukkens historie. Restauranten har en helt unik udseende, som kan fremhæve en stemning og hyggelig atmosfære, som vores interviewpersoner søger.`, img: './assets/img/mBraindump.webp'
                     },
-                    { navn: 'Affinity diagram', tekst: `På baggrund af braindumpet organiseres ideerne i et affinity diagram. Formålet med det er at identificere sammenhænge mellem ideerne, og dermed skabe en mere struktureret organisering af indholdet. Affinity diagrammet viser gennemgående kategorier som menu, arrangementer/begivenheder, praktiske informationer, historie, stemning og atmosfære m.m. Affinity diagrammet bidrager til fundamentet af vores informationsarkitektur.`, img: './assets/img/mAffinity.webp' },
+                    { navn: 'Affinity diagram', tekst: `På baggrund af braindumpet organiseres vores ideer i et affinity diagram. Formålet med det er at identificere sammenhænge mellem ideerne, og dermed skabe en mere struktureret organisering af indholdet. Affinity diagrammet viser gennemgående kategorier som menu, arrangementer/begivenheder, praktiske informationer, historie, stemning og atmosfære m.m. Affinity diagrammet bidrager til fundamentet af vores informationsarkitektur.`, img: './assets/img/mAffinity.webp' },
                     {
-                        navn: 'Indholdsmodel', tekst: `Vi har valgt under menuen at udvælge ret navn, beskrivelse, pris og billede, som core content.Det gør vi for at vise det mest værdifulde indhold for brugeren,hvilket kan skabe bedre forståelse for hvad siden omhandler. Da vi kommunikerer den vigtigste information, så vi kan understøtte os brugerens formål. 
+                        navn: 'Indholdsmodel', tekst: `Indholdsmodel anvendes for at skabe strukturet indhold. Vi har valgt under menuen at udvælge retnavn, beskrivelse, pris og billede, som core content. Det gør vi for at vise det mest værdifulde indhold for brugeren, hvilket kan skabe bedre forståelse for hvad siden omhandler. Vi kommunikerer den vigtigste information, så vi kan understøtte os brugerens formål. 
                         
-                        Vi anvender metadata med f.eks. tidspunkt og type af ret, hvilket hjælper os med at organisere indholdet for menuen. Det skaber et overblik for brugerne at kunne se hvad menuen indeholder, og hvornår det tilbydes. Kategorisering gennem type af ret, som “forret, hovedret, dessert” skaber en logisk opdeling af menuen for burgerne, uden at de skal læse beskrivelser af de enkelte retter.
+                        Metadata med f.eks. tidspunkt og type af ret, hvilket hjælper os med at organisere indholdet for menuen. Det skaber et overblik for brugerne, at kunne se hvad menuen indeholder, og hvornår det tilbydes. Kategorisering gennem type af ret, som “forret, hovedret, dessert” skaber en logisk opdeling af menuen for burgerne, uden at de skal læse beskrivelser af de enkelte retter.
                         
                         Derudover er tidspunkt som metadata relevant, fordi den angiver væsentligheden for menuen. Det forenkler brugerens beslutningsfase, da det fremviser hvilke retter, er tilgængelig i forhold til tiden. Overordnet set er anvendelse af metadata gennem vores indholdsmodel med til at skabe et ekstra lag af overblik, som understøtter vores informationsarkitektur. Vores videre arbejde på vores indholds model skaber muligheden, for at strukturere et card eller menuen. Dermed kan vi identificere og præsentere relevante indhold, som forbedrer overblikket for brugeren.`, img: './assets/img/mIndholdsmodel.webp'
                     },
 
                     {
-                        navn: 'Content sitemap', tekst: `Vi har truffet nogle forskellige valg i forhold til vores card sorting. F.eks. har vi truffet et valg om at ændre strukturen for alt indholdet gældende arrangementer. Vores fokus er at skabe en side med kun arrangementer, hvor navigationskategorien “arrangementer " tilegner sig indholdet. 
+                        navn: 'Content sitemap', tekst: `Vi har i content sitemap baseret nogle idéer ud fra vores card sorting. F.eks. har vi truffet et valg om at ændre strukturen for alt indholdet gældende arrangementer. Vores fokus er at skabe en side med kun arrangementer, hvor navigationskategorien “arrangementer " tilegner sig indholdet. 
                     
                         Ud fra Mallemukkens nuværende hjemmeside, så omhandler siden “arrangementer og mad ud af huset” ikke om arrangementer, men kun om “mad ud af huset”. Derimod kan Arrangementer findes ind under “kalender”. Det kan skabe en ustruktureret gennemgang for brugeren, hvilket formindsker muligheden for at finde væsentligt indhold. 
 
-                        Derfor har vi valgt at opdele “arrangementer” og “mad ud af huset” for at få en klar skildring og skabe bedre forståelse for ordvalget arrangementer. Ordvalget “arrangementer” skaber en konflikt, fordi Mallemukken også tilbyder muligheden for afholdelse af selskaber. Vi vil i stedet for “arrangementer & mad ud af huset” skabe to sektioner på siden, hvor navigationskategorien kun er “Mad ud af huset”, hvor det tydeligere bliver repræsenteret som sektionerne mad ud af huset og selskaber. 
+                        Derfor har vi valgt at opdele “arrangementer” og “mad ud af huset” for at få en klar skildring og skabe bedre forståelse for ordvalget arrangementer. Ordvalget “arrangementer” skaber en konflikt, fordi Mallemukken også tilbyder muligheden for afholdelse af selskaber. Vi vil i stedet for “arrangementer & mad ud af huset” skabe to sektioner på siden, hvor navigationskategorien kun er “Mad ud af huset”, hvor det tydeligere bliver repræsenteret som sektionerne "mad ud af huset" og "selskaber". 
 
                         Det skal gerne bidrage til en forbedret brugeroplevelse, da den ændrede struktur af indholdet skulle være lettere for brugerne at navigere i.
                         
                         `, img: './assets/img/mContentsitemap.webp'
                     },
                     {
-                        navn: 'Wayfinding', tekst: `Efter udarbejdelsen af content sitemap fokuseres der på wayfinding, som handler om at hjælpe brugeren med at orientere sig og navigere på hjemmesiden.
+                        navn: 'Wayfinding', tekst: `Efter udarbejdelsen af content sitemap fokuseres der på wayfinding for at hjælpe brugeren med at orientere sig og navigere på hjemmesiden.
                         
                         Vi anvender en global navigation med de vigtigste kategorier, hvor logoet linker til forsiden. På menukortsiden bruges tabs til at opdele indholdet i kategorier. Derudover anvendes CTA’er, kontekstuel navigation og accordions til at guide brugeren og skabe overblik.
                         
@@ -111,9 +110,9 @@ const projekter = [
                     {
                         navn: 'Informationsdesign', tekst: `Formålet med informationsdesign er at gøre det nemt for brugeren at orientere sig og finde relevant information. Vi har særligt fokus på meta- og coredata på sider som menu og arrangementer.
                         
-                        Menusiden er opbygget med en tydelig struktur bestående af navigation, overskrift og introduktionstekst, som skaber kontekst og understøtter SEO. Tabs opdeler indholdet i kategorier som frokost, aftenmenu og drikkevarer, hvilket gør det lettere at navigere.
+                        Menusiden er opbygget med en tydelig struktur bestående af navigation, overskrift og introduktions tekst, som skaber kontekst og understøtter SEO. Tabs opdeler indholdet i kategorier som frokost, aftenmenu og drikkevarer, hvilket gør det lettere at navigere.
                         
-                        Under menupunkterne anvendes coredata som retternes titel, beskrivelse og pris samt metadata som tidspunkt, allergener og præferencer. Dette skaber et tydeligt informationshierarki, giver bedre overblik og reducerer brugerens kognitive belastning.`, img: './assets/img/mInformationsdesign.webp'
+                        Under menupunkterne anvendes coredata som retternes titel, beskrivelse og pris samt metadata som tidspunkt, allergener og præferencer. Dette skaber et tydeligt informationshierarki, giver bedre overblik og reducerer brugerens kognitive belastning.`, img: './assets/img/mInformationsDesign.webp'
                     },
 
                 ]
@@ -138,7 +137,7 @@ const projekter = [
                         
                         Landingpagen starter med et stemningsskabende hero-billede, der giver brugeren et indtryk af restaurantens atmosfære. Derudover fremhæves Book bord i navigationen med en mørkere kontrastfarve, så funktionen er let at finde.
                         
-                        Indholdet organiseres i cards ved hjælp af gestaltprincipperne proximity og similarity, som skaber overblik. Dan Browns principper anvendes også gennem hero-billedet, begrænsede valgmuligheder (Choices) og nyhedscards, der fremhæver den vigtigste information først (Disclosure).`, img: './assets/img/mMockups.webp'
+                        Indholdet organiseres i cards ved hjælp af gestaltprincipperne proximity og similarity, som skaber overblik. Dan Browns principper anvendes også gennem hero-billedet, begrænsede valgmuligheder (Choices) og nyhedscards, der fremhæver den vigtigste information først (Disclosure).`, img: './assets/img/oMallemukken.webp'
                     },
                 ]
             },
@@ -147,7 +146,20 @@ const projekter = [
                 navn: 'Test',
                 under: [
                     {
-                        navn: '5-second test', tekst: ``, img: './assets/img/.webp'
+                        navn: '5-second test', tekst: `Vi gennemfører en 5-second test på forsiden, hvor vi tester om hero billedet udstråler følelser og stemning, og om designet skal ændres ift. visuelle elementer. 
+
+                        Resultaterne fra førstehåndsindtrykket, gav os forskellige svar, f.eks. havde testpersoner problemer med at læse overskriftens font og selve billedet viste for meget af loftet, hvilket skabet forvirring i hvad billedet går ud på, dog var der nogle positive svar, for eksempel, ”flot centeret billedet, hyggeligt sted og gode brug af farver”
+
+                        Herefter stilles spørgsmål til ”hvilken stemning giver billedet?”. Der lægges særligt vægt på, om billedet formår at skabe en stemning, som brugeren finder attraktiv. Resultaterne fremstår positiv, idet flere beskriver det som hyggeligt, flot og følelsen af varme. Testen giver os et indblik i, hvad der visuelt skal ændres for at skabe en positiv og hyggelig stemning i vores design, hvilket er placering af billeder og font valg. 
+                        `, img: './assets/img/mFivesecond.webp'
+                    }, {
+                        navn: 'Tree test', tekst: `Vi anvender Tree test for at undersøge om vores navigationsstruktur er forståelig for brugeren, hvilket giver indsigt om vi skal optimere navigationsstrukturen.
+                        
+                        Vores formål er at teste vores ændringer i designet og om der kunne forekomme probelmatikker for brugerne. F.eks. ville det være muligt for brugerne, at finde information om selskaber, eller finde frem til mallemukkens historie.
+                        
+                        Resultaterne fra tree testen kommer med forskellige succesrater i forhold til de enkelte spørgsmål, F.eks. ved et spm. er succesraten 40% ud af 100%, brugerne havde problemer med at navigere sig rigtig hen til information om selskaber. Derfor har vi valgt at adskille navigationspunktet “mad ud af huset og selskaber” til to separate sider, hvilket skal forbedre brugernes forståelse af de to navigationspunkter.
+                        
+                        Derimod har succesraten for spørgsmål 4 været 100%. Det giver os en klar forståelse for, at navigationspunktet “om os” kan indeholde mallemukkens historie, uden at brugerne bliver i tvivl om, hvilken navigations vej de skal gå. Det afklarer vores forståelse for at de andre navigationspunkter skal prioriteres mere og uddybes, så brugerne nemt kan finde frem til indholdet.`, img: './assets/img/mTreetest.webp'
                     },
                 ]
             }
@@ -161,39 +173,37 @@ const projekter = [
         topNav: [
             {
                 navn: 'To do List',
-                tekst: 'I dette projekt har jeg arbejdet med en todo list opgave fra Frontend Mentor. Jeg havde fokus på at udfordre mine kompetencer i projektet med anvendelse af forskellige Frontend teknologier. Jeg valgt udover anvendelse af JavaScript, CSS og Html, at gøre brug af frameworket Vue.',
+                tekst: 'I dette projekt har jeg arbejdet med en todo list opgave fra Frontend Mentor. Jeg havde fokus på at udfordre mine kompetencer i projektet med anvendelse af forskellige Frontend teknologier. Jeg har valgt udover anvendelse af JavaScript, CSS og Html, at gøre brug af frameworket Vue.',
                 img: './assets/img/todo.webp',
-                github: '',
             },
 
             {
                 navn: 'Udvikling',
                 under: [
                     {
-                        navn: 'Vue', tekst: `Jeg har opbygget brugergrænsefladen med frameworket Vue for at skabe skrive kortere kode og anvende komponenter i mit arbejde. Jeg har lavet en todolist component for at skabe overblik og gør det lettere at indkasple logik/script.
+                        navn: 'Vue', tekst: `Jeg har opbygget brugergrænsefladen med frameworket Vue, for at skrive kortere kode og anvende komponenter i mit arbejde. Jeg har lavet en todolist component for at skabe overblik og gør det lettere at indkasple logik/script.
                     
-                        På billedet ses et udsnit af indholdet af min component, i min template anvender jeg en såkaldt v-for directive, som looper i gennem min liste af todo. Det binder data til det man kan se på skærmen. Vue-directives er særlige HTML-attributter med præfikset v-, som fortæller Vue, at der skal udføres en bestemt handling på et DOM-element.
+                        På billedet ses et udsnit af indholdet af min component. Jeg anvender i min template, en såkaldt v-for directive, som looper i gennem min liste af todo. Det binder data til det man kan se på skærmen. Vue-directives er særlige HTML-attributter med præfikset v-, som fortæller Vue, at der skal udføres en bestemt handling på et DOM-element.
                         
                         v-for="todo in toDoList": Loop igennem hver opgave i listen. :key="todo.objectId": key attributen er med til at identificere hvert opgave element i min liste (array) lavet med v-for. :class="{ completed: todo.completed }": conditional classes er anvendet for at tilføje en class når en opagve er færdiggjort. 
-                        Hvis todo.completed er true, så tilføjese class "completed", hvis den er false undlades class completed. @click="removeToDo(todo.objectId)": Når man klikker på li, så skal funktionen removetodo fjerne opgaven. 
+                        Hvis todo.completed er true, så tilføjes class "completed", hvis den er false undlades class completed. @click="removeToDo(todo.objectId)": Når man klikker på li, så skal funktionen removetodo fjerne opgaven. 
 
                         Dernæst i template er der anvendt vue interpolation {{}}, for at få title vist i min html og få min counter funktion vist frem. 
                     
                         `, img: './assets/img/vue.webp'
                     },
                     {
-                        navn: 'Javascript', tekst: ` Jeg har anvendt javascript til at lave en todolist state med et array som indebærer listen af todo. Dernæst lavet forskellige funktioner for at f.eks. at fjerne en todo. 
+                        navn: 'Javascript', tekst: ` Jeg har anvendt javascript til at lave en todolist state med et array, som indebærer listen af todo. Dernæst lavet forskellige funktioner for at f.eks. at fjerne en todo. 
 
                         export const removeToDo = (objectId) => {
                             toDoList.value = toDoList.value.filter((todo) => todo.objectId !== objectId)}
 
-                        Export er anvendt for at kunne gøre burg af mine funktioner på f.eks. min komponent. Jeg har lavet en state removeToDo, tilegent min obejctid, hvilket vil sige når jeg laver arrow funktionen, så skal den eksisterende liste være lig med at du tager den liste og filtre igennem hvert todo. Så er reglen at det skal kontrolleres om hvert todo er forskelligt fra sit objectid. Hvis det er forskelligt bliver opgaven, men hvis det er ens fjernes opgaven fra listen. 
+                        Export er anvendt for at kunne gøre burg af mine funktioner på f.eks. min komponent. Jeg har lavet en state removeToDo, tilegent min obejctid, hvilket vil sige når jeg laver arrow funktionen, så skal den eksisterende liste være lig med, at du tager den liste og filtre igennem hvert todo. Så er reglen at det skal kontrolleres om hvert todo er forskelligt fra sit objectid. Hvis det er forskelligt "bliver" opgaven, men hvis det er ens "fjernes" opgaven fra listen. 
 
                    export const toggleToDo = (objectId) => { toDoList.value.forEach(todo => { if (todo.objectId === objectId) {todo.completed = !todo.completed;}}
                    );};
 
-                       Lavet en state toggleToDO, tilegent min obejctid, hvilket vil sige når jeg laver arrowfunktion, så skal den eksisterende liste være lig med, at du tager den liste og gennemgår alle opagver ved hjælp af foreach. Dette sker kun, hvis object id i listen matcher. Hvis det matcher, så skal completed vendes fra true/false eller false/true. Dermed gennemgåes opgaven og ændres opagven ud fra matchet med id'et. 
-                    
+                       Lavet en state toggleToDO, tilegent min obejctid, hvilket vil sige når jeg laver arrowfunktionen, så skal den eksisterende liste være lig med, at du tager den liste og gennemgår alle opagver ved hjælp af foreach. Dette sker kun, hvis object id i listen matcher. Hvis det matcher, så skal completed vendes fra true/false eller false/true. Dermed gennemgåes opgaven og ændres ud fra matchet med id'et. 
                         `, img: './assets/img/javascript.webp'
                     },
 
@@ -204,12 +214,12 @@ const projekter = [
         ]
     },
     {
-        projekt: 'Det lille køkken',
+        projekt: 'Det-lille-køkken',
         topNav: [
             {
-                navn: 'Headless cms - Det lille køkken',
-                tekst: `I dette projekt har vi fokuseret på at lavet et opskriftwebsite, som repræsenterer opskrifter struktureret og brugervenligt, dermed bedre understøtter familiernes behov for overblik og enkel planlægning i en travl hverdag.`,
-                img: './assets/img/recipe.webp',
+                navn: 'Det lille køkken',
+                tekst: `Jeg har fælles med andre multimediedesignerstuderende fokuseret på at lave et opskriftwebsite, som repræsenterer opskrifter struktureret og brugervenligt. Formålet var at bedre understøtte familiernes behov for overblik og enkel planlægning i en travl hverdag.`,
+                img: './assets/img/rMockup.webp',
                 github: 'https://github.com/Freja137/headless_cms',
                 webiste: 'https://mmd.ucn.dk/class/MMD-CSD-S25/10700526/headless_cms/index.html'
             },
@@ -217,13 +227,13 @@ const projekter = [
             {
                 navn: 'Analyse',
                 under: [
-                    { navn: 'Desk research', tekst: `Vores research viser, at familier med skolebørn på tværs af familietyper har flere fælles behov og udfordringer. Vi har særligt fået indsigt i, at tidspres præger familiens madvaner, og at nemme, hurtige og børnevenlige måltider ofte prioriteres. Samtidig er sundhed, økonomi og fællesskabet omkring måltidet vigtige faktorer. Researchen giver os dermed en bedre forståelse af målgruppens madvaner og danner grundlag for en mere nuanceret segmentering.`, img: './assets/img/' },
+                    { navn: 'Desk research', tekst: `Vores research viser, at familier med skolebørn på tværs af familietyper har flere fælles behov og udfordringer. Vi har særligt fået indsigt i, at tidspres præger familiens madvaner, og at nemme, hurtige og børnevenlige måltider ofte prioriteres. Samtidig er sundhed, økonomi og fællesskabet omkring måltidet vigtige faktorer. Researchen giver os dermed en bedre forståelse af målgruppens madvaner og danner grundlag for en mere nuanceret segmentering.` },
                     {
                         navn: 'Segmentering', tekst: `Segmenteringen viser, at målgruppen primært består af danske familier med skolebørn og forældre i alderen 29-45 år. Fælles for målgruppen er en travl hverdag, hvor de søger nemme og effektive løsninger til madlavningen uden at gå på kompromis med sundhed og kvalitet. 
                         
                         Derudover kan de motiveres af ønsket om at skabe mere tid til familien, prioritere socialt samvær og reducere hverdagens stress. Målgruppen har derfor både praktiske og følelsesmæssige behov, som har betydning for deres valg og adfærd.
 
-                        Segmenteringen giver et indblik i, hvordan brugerne kan forholde sig til madlavning, hvilket kan underbygges af kvalitative interview for at skabe et nuanceret billede på hvordan familier forholder sig til madlavning. 
+                        Segmenteringen giver et indblik i, hvordan brugerne kan forholde sig til madlavning, hvilket kan underbygges af kvalitative interview. Det skaber et nuanceret billede på hvordan familier forholder sig til madlavning. 
                         
                         `, img: './assets/img/rSegmentering.webp'
                     },
@@ -237,9 +247,15 @@ const projekter = [
                         Fokus på undersøgelsesspørgsmål, som er, ”Hvad kunne gøre madlavningen lettere for familier med skolebørn at planlægge og udføre madlavningen i en travl hverdag?. Og ” hvordan håndterer familier med skolebørn deres madlavning i hverdagen - herunder rutiner, beslutninger og udfordringer?`, img: './assets/img/rInterviewguide.webp'
                     },
                     {
-                        navn: 'Tematisk analyse', tekst: `I analysen af de kvalitative interviews fremkommer to centrale fællestemaer: tid og planlægning. Interviewpersonerne beskriver de to temaer i samspil med hinanden, da tidsmangel har storbetydning for deres valg af måltider og ofte fører til hurtige og mindre gennemtænkte løsninger. Dette underbygger, at planlægningen fungerer som en strategi til at håndtere en travl hverdag. Det skaber spørgsmålet? Hvordan kan vi fremvise temaerne i vores designbeslutninger? Temaerne som tid og planlægning kan skabe frustrationer, hvordan kan vi forenkle brugernes tid, så de bedre kan planlægge. hvilket hvilket tydeliggør, hvad der er vigtigt for brugerne. `, img: './assets/img/'
+                        navn: 'Tematisk analyse', tekst: `I analysen af de kvalitative interviews fremkommer to centrale fællestemaer: tid og planlægning.
+                        
+                        Interviewpersonerne beskriver de to temaer i samspil med hinanden, da tidsmangel har storbetydning for deres valg af måltider og ofte fører til hurtige og mindre gennemtænkte løsninger.
+                        
+                        Dette underbygger at planlægningen fungerer, som en strategi til at håndtere en travl hverdag. Det skaber spørgsmålet? Hvordan kan vi fremvise temaerne i vores designbeslutninger?
+                        
+                        Temaerne som tid og planlægning kan skabe frustrationer, hvordan kan vi forenkle brugernes tid, så de bedre kan planlægge madlavningen i en travl hverdag. `,
                     },
-                    { navn: 'Empathy map', tekst: `Mangler et empathy map`, img: './assets/img/' },
+
 
 
                 ]
@@ -249,13 +265,15 @@ const projekter = [
                 navn: 'Problemløsning',
                 under: [
                     {
-                        navn: 'Brain dump', tekst: `Det fremvises i vores brain dump nogle af vores ideer i forhold til vores opskrift website. F.eks. at brugerne i højere grad kan finde forskellige kategorier i forhold madlavning, som tid, land eller helt generelt morgenmad, frokost, aftensmad og dessert.Det kom på baggrund af vores interviewpersoner, med deres gentagende svar om, deres manglende tid i hverdagen, hvor muligheden for lettere at kunne finde en ret på under 30 min kan gøre underværker.`, img: './assets/img/rBraindump.webp'
+                        navn: 'Brain dump', tekst: `Det fremvises i vores brain dump nogle af vores ideer i forhold til vores opskrift website. F.eks. at brugerne i højere grad kan finde forskellige kategorier i forhold madlavning, som tid, land eller helt generelt opdeling med morgenmad, frokost, aftensmad og dessert.
+                        
+                        Det kom på baggrund af vores interviewpersoner, med deres gentagende svar om manglende tid i hverdagen. De nævnte at muligheden for at finde en ret på under 30 min, kan gøre underværker.`, img: './assets/img/rBraindump.webp'
                     },
-                    { navn: 'Affinity diagram', tekst: `På baggrund af braindumpet organiseres ideerne i et affinity diagram. Formålet med det er at identificere sammenhænge mellem ideerne, og dermed skabe en mere struktureret organisering af indholdet. Affinity diagrammet viser kategorier som en opskrift og opskriftsamling, det har fælles træk, men det har en adskilles i sig, som fremhæves ved ordet samling. Affinity diagrammet bidrager til fundamentet af vores informationsarkitektur`, img: './assets/img/rAffinity.webp' },
+                    { navn: 'Affinity diagram', tekst: `På baggrund af braindumpet organiseres ideerne i et affinity diagram. Formålet med det er at identificere sammenhænge mellem ideerne, og dermed skabe en mere struktureret organisering af indholdet. Affinity diagrammet viser kategorier som en opskrift og opskriftsamling, de har fælles træk, men stadig forskellige. En opskrift er en udfoldet opskrift og en opskrift smaling er en samling af flere opskrifter.`, img: './assets/img/rAffinity.webp' },
                     {
-                        navn: 'Indholdsmodel', tekst: `Core content skaber en opskrift, det er en titel, ingredienser og billede, det som ikke kan undværes, for at det bliver til en opskrift. Dermed egenskaber som beskriver vores opskrift, ligesom måltidstype eller sæson. Vi har beskrevet ud fra en indholdsmodel, de metadata og core content, som er relevante for vores website ud fra en opskrift og opskriftsamling. Det viser hvordan vores core content og metadata er anvendt. Vi har metadata som måltidstype, tilberedningstid og allergener. 
-                    
-                        Vi bruger disse metadata for at filtre og kategorisere vores opskrifter og opskriftsamlinger. Dermed bliver der brugt klassificering på de forskellige metadata, hvilket gør at brugeren kan anvende forskellige filtre, så brugerens behov bliver tilpasset efter dette. Vi skaber nogle meta data med udgangspunkt fra vores interview, f.eks. tid som har været meget i fokus, derfor har vi prioriterede den som en af de mere vigtige. Så behovet for nemmere planlægning kan bliver opfyldt, hvilket tiden kan have en effekt på.`, img: './assets/img/rIndhold.webp'
+                        navn: 'Indholdsmodel', tekst: `Vi bruger indholdmodel for at skabe overskulighed i vore struktur. Core content skaber en opskrift, som titel, ingredienser og billede, det som ikke kan undværes, for at det bliver til en opskrift. Opskriften har egenskaber, som måltidstype eller sæson. 
+
+                        Vi bruger metadata for at filtre og kategorisere vores opskrifter og opskriftsamlinger. Dermed bliver der brugt klassificering på de forskellige metadata, hvilket gør at brugeren kan anvende forskellige filtre, så brugerens behov bliver tilpasset efter dette. Vi skaber nogle meta data med udgangspunkt fra vores interview, f.eks. tid som har været meget i fokus. Tid blvier prioriterede, så behovet for nemmere planlægning kan bliver opfyldt, hvilket tiden kan have en effekt på.`, img: './assets/img/rIndhold.webp'
                     },
                     {
                         navn: 'Content sitemap', tekst: `Content sitemapet præsenterer en overskuelig og struktureret opbygning af websitet, hvor forsiden fungerer som indgang til resten af indholdet. Brugeren mødes først af et billede og en titel, der introducerer websitet. Herefter præsenteres udvalgte opskrifter, som giver direkte adgang til de enkelte opskriftsider.
@@ -264,7 +282,7 @@ const projekter = [
                         
                         De enkelte opskriftsider giver brugeren adgang til opskriftens indhold og fremgangsmåde, mens opskriftsamlingen gør det muligt at finde inspiration blandt flere opskrifter samlet efter et fælles tema.
                         
-                        Samlet set er strukturen opbygget med fokus på at gøre det nemt for brugeren at navigere mellem forsiden, opskrifterne og opskriftsamlingerne. Det skaber flere indgange til indholdet og gør det lettere at finde inspiration og vælge opskrifter, der passer til familiens behov og hverdag.`, img: './assets/img/.webp'
+                        Samlet set er strukturen opbygget med fokus på, at gøre det nemt for brugeren, at navigere mellem forsiden, opskrifterne og opskriftsamlingerne. Det skaber flere indgange til indholdet og gør det lettere, at finde inspiration og vælge opskrifter, der passer til familiens behov og hverdag.`, img: './assets/img/rContent.webp'
                     },
                     {
                         navn: 'Informationsorganisering', tekst: `Filtre bygger oven på taksonomien og gør det muligt for brugeren at kombinere forskellige valg på tværs af kategorier. Det skaber en mere fleksibel løsning, hvor brugeren kan finde opskrifter ud fra egne behov og præferencer, eksempelvis allergier, kostvaner, sværhedsgrad og tidsforbrug.
@@ -283,20 +301,41 @@ const projekter = [
                     {
                         navn: 'Skitser', tekst: `Vi tager udgangspunkt i prototyping, hvor vi gennem flere iterationer udvikler og forbedrer vores skitser. Skitserne fungerer som grundlag for hjemmesidens struktur og funktioner, som vi videreudvikler i wireframes.
                         
-                        I vores skitser arbejdet vi med ideer i forhold til cards, filtre og opdeling, som skulle gøre det lettere for brugeren at navigere uden at blive overvældet af information. Derudover har vi tilføjet cards sektioner med billede og tekst, som skal skabe en genvej til opskrifter, og tilføje interesse for maden`, img: './assets/img/rSkitser.webp'
+                        I vores skitser arbejdet vi med ideer i forhold til cards, filtre og opdeling, som skulle gøre det lettere for brugeren at navigere uden at blive overvældet af information. Vi har tilføjet cards sektioner med billede og tekst, som skal skabe en genvej til opskrifter, og tilføje interesse for maden`, img: './assets/img/rSkitser.webp'
                     },
                     {
                         navn: 'Wireframes', tekst: `Ud fra skitserne udarbejdes low-fi wireframes, som visualiserer hjemmesidens struktur, placering og størrelse af indholdselementer uden fokus på farver og detaljer.
                         
-                        I vores wireframes placeres navigationen øverst, med fokus på kategorisering, mens indhold opdeles i sektioner med "madcards" for at skabe overblik. Derudover anvendes tydelige CTA-knapper, meta data og core content til at guide brugeren videre og skabe forståelse for indholdet.`, img: './assets/img/rWireframes.webp'
+                        I vores wireframes placeres navigationen øverst, med fokus på kategorisering, mens indhold opdeles i sektioner med "mad cards" for at skabe overblik. Derudover anvendes tydelige CTA-knapper, meta data og core content til at guide brugeren videre og skabe forståelse for indholdet.`, img: './assets/img/rWireframes.webp'
                     },
                     {
-                        navn: 'Mockups', tekst: `Mockuppen viser vores landingpage i desktop-versionen, hvor vi tager udgangspunkt i udfordringerne fra interviewundersøgelsen og empathy map. Vi anvender visuelt hierarki, gestaltprincipper og indholdsmodel for at skabe en overskuelig brugeroplevelse.
+                        navn: 'Mockups', tekst: `Mockuppen viser vores landingpage i desktop-versionen, hvor vi tager udgangspunkt i udfordringerne fra vores interviews. Vi anvender visuelt hierarki, gestaltprincipper og indholdsmodel for at skabe en overskuelig brugeroplevelse.
                         
-                        Landingpagen starter med et stemningsskabende hero-billede, der giver brugeren et indtryk affamilie hygge, som skal blive associeret med maden. Derudover fremhæves forskellige sektioner med mad opskrifter for at brugerne kan vælge de kategorier, som tilpasser sig deres behov. Dette ses også i navigationen med kategori udvægelse.
+                        Landingpagen starter med et stemningsskabende hero-billede, der giver brugeren et indtryk af familie hygge, som skal blive associeret med maden. Derudover fremhæves forskellige sektioner med mad opskrifter for, at brugerne kan vælge de kategorier, som tilpasser sig deres behov. Dette ses også i navigationen med kategori.
                         
-                        Indholdet organiseres i cards ved hjælp af gestaltprincipperne proximity og similarity, som skaber overblik. Deruover meta data med ikoner for at skabe bedre visuel forståelse af teksten.`, img: './assets/img/recipe.webp'
+                        Indholdet organiseres i cards ved hjælp af gestaltprincipperne proximity og similarity, som skaber overblik. Deruover meta data med ikoner for at skabe bedre visuel forståelse af teksten.`, img: './assets/img/rMockup.webp'
                     }
+
+
+                ]
+            },
+
+            {
+                navn: 'Kodning',
+                under: [
+                    {
+                        navn: 'Headless cms', tekst: `I udviklingen af det færdige website anvendes WordPress som Content Management System (CMS), hvor indholdet struktureres ved brug af indlægs, taksonomier og Advanced Custom Fields (ACF). WordPress fungerer i denne sammenhæng som datakilde, mens frontend er opbygget separat med HTML, CSS og JavaScript. 
+                        
+                        Det muliggør en fleksibel og dynamisk data udveksling mellem CMS og frontend via WordPress Rest API. WordPress anvendes til strukturering, organisering og håndtering af indhold ved brug af taksonomier, ACF og indlæg. Samspillet mellem GitHub og WordPress gør det muligt at hente og præsentere data dynamisk via et API.
+                        
+                        Vores data bliver hentet fra WordPress via et Rest API, som laver dataene om til json-format. Først definerer vi vores baseUrl, hvortil vi bruger forskellige endpoints til at hente alle opskrifter eller én enkelt opskrift. 
+                        
+                        Vi henter én bestem opskrift ved at bruge sidens tilhørende slug fra WordPress. Det gør det muligt at bestemme, hvilken specifik opskrift vi ønsker der skal vises. Vi kontrollerer om der modtages noget data, hvor vi laver en if/else. Det tjekker om, hvis der hentes noget data, så vises det via rendeRecipe og hvis der ikke findes noget data, så vises alle opskrifterne automatisk.`, img: './assets/img/rHeadlesscms.webp'
+                    },
+
+
+
+
                 ]
             }
         ]
@@ -437,13 +476,15 @@ function visIndhold() {
             ${indholdData.img ? `<img src="${indholdData.img}" data-lightbox="${indholdData.img}" alt="${indholdData.navn}">` : ''}
             
      </article>
-     </section>
-     <div class="btninfo">
+
+
+     <div>
      <a  href="${indholdData.github}" target="_blank"> Se projektet på GitHub </a>
      <a  href="${indholdData.webiste}" target="_blank"> Se website </a>
      </div>
+     </section>
 
-     
+    
 
     `;
 
