@@ -38,7 +38,7 @@ body {
 .header-content {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     padding-right: var(--side);
     padding-left: var(--lgGap);
 
@@ -57,11 +57,14 @@ body {
 
     /* til de andre sider hvor p bliver skiftet ud nav content */
     .nav-content {
-        display: flex;
-        justify-content: space-between;
-        gap: var(--xlGap);
-        list-style: none;
-        align-items: center;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: var(--xlGap);
+            list-style: none;
+            align-items: center;
+        }
+
 
         a {
             text-decoration: none;
@@ -324,6 +327,7 @@ body {
             line-height: 150%;
             font-family: var(--fontBody);
             font-weight: 300;
+            padding-bottom: var(--mdGap);
 
         }
 
@@ -338,21 +342,19 @@ body {
             }
         }
 
-        button {
-
+        a {
             background-color: var(--buttonColor);
             box-shadow: var(--shadow);
             color: var(--textColor);
-            border: none;
             padding: .8rem .5rem;
             border-radius: 6px;
-            margin-top: var(--mdGap);
             cursor: pointer;
-            margin-top: 2.5rem;
+            text-decoration: none;
+            font-family: var(--fontBody);
 
         }
 
-        button:hover {
+        a:hover {
             background-color: #4a1f2b;
         }
     }
@@ -557,18 +559,6 @@ body {
             padding-bottom: var(--smGap);
         }
 
-        button {
-            border: none;
-            background-color: var(--buttonColor);
-            padding: .5rem 1rem;
-            border-radius: 6px;
-            color: white;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #4a1f2b;
-        }
     }
 
     /* Placeringen på kortet */
