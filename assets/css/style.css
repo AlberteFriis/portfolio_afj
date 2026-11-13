@@ -267,15 +267,23 @@ body {
             line-height: 150%;
             font-family: var(--fontBody);
             font-weight: 300;
-            padding-bottom: var(--mdGap);
+            padding-bottom: var(--smGap);
 
+            span {
+                font-weight: 900;
+            }
+
+        }
+
+        .bText {
+            padding-bottom: 5.5rem;
         }
 
         h1 {
             font-size: var(--headingSize);
             color: var(--textColor);
             font-family: var(--fontHeader);
-            margin: none;
+
 
             span {
                 color: var(--buttonColor);
@@ -363,7 +371,7 @@ body {
                 color: var(--textColor);
                 font-family: var(--fontHeader);
                 font-size: 16px;
-                font-weight: 300;
+                font-weight: 500;
                 display: flex;
                 gap: var(--smGap);
             }
@@ -374,6 +382,13 @@ body {
                 font-family: var(--fontBody);
                 font-size: 14px;
                 font-weight: 300;
+
+
+            }
+
+            .citat {
+                font-style: italic;
+                font-weight: 100;
             }
 
 
@@ -432,6 +447,7 @@ body {
             cursor: pointer;
             left: 83%;
             top: 17.5%;
+            box-shadow: var(--shadow);
         }
 
         .contactProject:hover {
@@ -458,7 +474,7 @@ body {
         text-decoration: none;
         cursor: pointer;
         display: block;
-        border-radius: 10px;
+        border-radius: 6px;
         overflow: hidden;
         box-shadow: var(--shadow);
 
@@ -488,6 +504,8 @@ body {
             padding: .5rem 1rem;
             color: var(--textColor);
             font-weight: bold;
+            border-radius: 6px;
+            box-shadow: var(--shadow);
         }
 
         .readProject:hover {
@@ -620,7 +638,7 @@ body {
 }
 
 
-/* TOPNAVIGATION */
+/* Top navigation */
 .topNav {
     position: relative;
     display: flex;
@@ -706,6 +724,10 @@ body {
         background-color: var(--buttonColor);
     }
 
+    button.aktiv {
+        background: var(--buttonColor);
+        outline: 3px solid rgba(240, 138, 75, 0.3);
+    }
 
 }
 

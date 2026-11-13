@@ -175,10 +175,11 @@ const projekter = [
                 navn: 'To do List',
                 tekst: 'I dette projekt har jeg arbejdet med en todo list opgave fra Frontend Mentor. Jeg havde fokus på at udfordre mine kompetencer i projektet med anvendelse af forskellige Frontend teknologier. Jeg har valgt udover anvendelse af JavaScript, CSS og Html, at gøre brug af frameworket Vue.',
                 img: './assets/img/todo.webp',
+
             },
 
             {
-                navn: 'Udvikling',
+                navn: 'Kodning',
                 under: [
                     {
                         navn: 'Vue', tekst: `Jeg har opbygget brugergrænsefladen med frameworket Vue, for at skrive kortere kode og anvende komponenter i mit arbejde. Jeg har lavet en todolist component for at skabe overblik og gør det lettere at indkasple logik/script.
@@ -345,7 +346,7 @@ const projekter = [
 
 // Vis det første punkt i min top navigationen --> kaldet overblik 
 let aktivTopNav = 0;
-// og lad under navigation værende fraværende indtil andet gjort.?????
+// og lad under navigation værende fraværende (ingen værdi) indtil andet gjort.
 let aktivUnderNav = null;
 
 // navigation til det rigtige projekt, laver en variabel for min url, så kaldt at kilde: https://developer.mozilla.org/en-US/docs/Web/API/Location/search, new URLSearchParams skal kunne finde frem til min søgestreng efter ? for min url. 
@@ -392,7 +393,7 @@ function visTopNav() {
 
     // join for samle elementerne uden andre faktorer. 
 
-    // henter alle elementer i min topnav med class stop fra innerhtml, så for hver knap, når man klikker på den skal aktivtopnav være lig med at omsætningen af værdien i number til tallet i knappens index. Dvs. at hvis jeg trykker på knappen kaldet overblik i mit array, så skal data-index være på den rigte værdig 0 og registere at vi er på den side, så undermenupunkterne nulstilles og indholdet til de forskellige sider opdateres rigtigt. 
+    // henter alle elementer i min topnav med class stop fra innerhtml, så for hver knap, når man klikker på den skal aktivtopnav være lig med at omsætningen af værdien i number til tallet i knappens index. Dvs. at hvis jeg trykker på knappen kaldet overblik i mit array, så skal data-index være på den rigtige værdig 0 og registere, at vi er på den side, så undermenupunkterne nulstilles og indholdet til de forskellige sider opdateres rigtigt. 
     //Kilde: https://www.w3schools.com/jsref/jsref_number.asp number(value) omsætter en værdi til et nummer.
 
 
@@ -419,34 +420,28 @@ function visUnderNav() {
         topUnderNav.innerHTML = '';
         return;
     }
-
+    // anvender igen  conditional ternary operator, så når class="", hvor index er lig med aktivundernav passer, så skal class aktiv tilføjes til.
     topUnderNav.innerHTML = valgt.under.map((item, index) => `
-        <button data-index="${index}">
-            ${item.navn}
+        <button data-index="${index}" class="${index === aktivUnderNav ? 'aktiv' : ''}"> ${item.navn}
         </button>
     `).join('');
+
 
     topUnderNav.querySelectorAll('button').forEach(button => {
         button.addEventListener('click', () => {
             aktivUnderNav = Number(button.dataset.index);
+            visUnderNav();
             visIndhold();
         });
     });
 }
-
-// 
-
-
-
-
-
 
 // Funktion for indholdet.
 function visIndhold() {
     //Laver en variabel med navnet (valgt) såkaldt at den skal ned i mine projekter med den første aktivprojekt, og tag fat ned i min topnav i arrayet, med også den første aktivtopnav. 
     const valgt = projekter[aktivprojekt].topNav[aktivTopNav];
 
-    // Dernæst laver jeg en tom variabel, som gør at jeg kan gennem værdier i den uden at jeg skal til at lave flere varaibler. 
+    // Dernæst laver jeg en tom variabel, som gør at jeg kan gemme værdier i den uden at jeg skal til at lave flere varaibler. 
     let indholdData;
 
     //  Jeg kan her gøre brug af min valgt variabel, hvilket gøre brug af betingelsen, hvis det sted i arrayet ned ved undermenuen er skal være lig med værende fraværende indtil det første index vises, altså den første side i undernav når man trykker på topnav. 
